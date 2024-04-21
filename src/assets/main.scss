@@ -1,0 +1,31 @@
+// 引入 Tailwind CSS
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+//abstract
+@import 'abstract/mixin';
+@import 'abstract/visualization';
+
+// base
+@import 'base/base';
+@import 'base/animation';
+
+// components 
+@import 'components/carousel';
+@import 'components/navigation';
+@import 'components/universe';
+@import 'components/count';
+@import 'components/spring';
+@import 'components/summer';
+@import 'components/autumn';
+@import 'components/winter';
+
+// pages
+@import 'pages/homePage';
+@import 'pages/loading';
+// layouts
+
+
+// test
+@import 'components/test';

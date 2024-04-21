@@ -1,0 +1,106 @@
+// universePage
+@keyframes planet-rotate {
+  0% {
+    // 執行順序：右到左，先旋轉，再壓縮
+    transform: rotateZ(30deg) scaleY(0.5) rotateZ(0);
+  }
+
+  100% {
+    transform: rotateZ(30deg) scaleY(0.5) rotateZ(360deg);
+  }
+}
+
+@keyframes self-rotate {
+  0% {
+    // 相反解鎖：先拉長，抵銷旋轉
+    transform: rotateZ(0) scaleY(2) rotateZ(-30deg);
+  }
+
+  100% {
+    transform: rotateZ(-360deg) scaleY(2) rotateZ(-30deg);
+  }
+}
+
+@keyframes sun-shine {
+  0% {
+    filter: brightness(0.9);
+  }
+
+  50% {
+    filter: brightness(1.1) drop-shadow(0 0 30px #ffc200);
+  }
+
+  100% {
+    filter: brightness(0.9);
+  }
+}
+
+@keyframes star-move {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-500px);
+  }
+}
+
+// other
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideOutToTop {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+// homePage
+@keyframes spring {
+  0% {
+    transform: scale3d(0.6, 0.6, 1)
+  }
+
+  0% {
+    transform: scale3d(1.5, 1.5, 1)
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1)
+  }
+}
+
+// summerPage
+@keyframes spin {
+  0% {
+    -webkit-transform: rotateX(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate3d(.8, 1, 0.5, -360deg);
+  }
+}
+
+// loading 
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}

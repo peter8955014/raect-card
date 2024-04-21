@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.home-box {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/img/home-background-2.jpg");
+  background-position: center;
+  background-size: cover;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,44 @@
+.lodaing-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.loading-box {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.loading-word {
+  background-size: cover;
+  background-position: center;
+  font-size: clamp(3rem, 15vw, 20rem);
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  text-align: center;
+  background-clip: text;
+  color: transparent;
+  pointer-events: none;
+  line-height: 100vh;
+}
+
+.backdrop {
+  position: absolute;
+  background-color: $color-white;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  animation: pulse 3s infinite;
+}

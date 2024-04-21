@@ -1,0 +1,32 @@
+.autumn-box {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  @include background('../assets/img/nav-autumn.jpg',
+    $color-black,
+    $color-secondary-light );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.shuffleGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 创建4列，每列等宽 */
+  grid-template-rows: repeat(4, 1fr);
+  /* 创建4行，每行等高 */
+  gap: 1rem;
+
+  margin-top: 5rem;
+  width: 100rem;
+  height: 50rem;
+  /* 设置高度为450px */
+}
+
+.img-box {
+  background-size: cover;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
